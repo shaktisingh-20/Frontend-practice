@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            padding:0;
+            margin:0;
+            background-color: crimson;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            background-color: rgb(246, 62, 65);
+            text-align: center;
+            padding: 10px;
+            border: solid cornsilk;
+            border-radius: 10px;
+            width: 240px;
+        }
+        input{
+            padding: 10px;
+            border: solid;
+            border-radius: 8px;
+            border-color: cornsilk;
+            margin-bottom: 20px;
+            background-color: rgb(231, 90, 118);
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        button{
+            background-color: rgb(225, 96, 96);
+            margin-bottom: 15px;
+            padding:10px;
+            border: solid;
+            border-radius: 8px;
+            color: cornsilk;
+        }
+        button:hover{
+            background-color: crimson;
+        }
+        h2{
+            color: cornsilk;
+            margin:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Login</h2>
+    <form action="">
+        <input type="text" name="username" id="username" placeholder="Enter your username">
+        <input type="password" name="password" id="password" placeholder="Password">
+        <button type="submit">Login</button>
+    </form>
+    </div>
+</body>
+</html>
