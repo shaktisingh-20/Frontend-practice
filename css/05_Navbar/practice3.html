@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(3, 113, 76);
+            color: antiquewhite;
+        }
+        .nav-container{
+            margin: 40px;
+        }
+        .nav{
+            background-color: #fff;
+            padding: 10px;
+        }
+        .nav ul{
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            list-style-type: none;
+            margin: 0
+            ;
+            padding: 0;
+        }
+        .nav a{
+            text-decoration: none;
+            color: rgb(4, 19, 33);
+            padding: 10px;
+            display: block;
+        }
+        .nav .dropdown-content{
+            display: none;
+            border: 1px solid black;
+            border-radius: 8px;
+        }
+        .nav .dropdown:hover .dropdown-content{
+            display: block;
+            position: absolute;
+            background-color: white;
+            min-width: 150px;
+        }
+        .login-btn{
+            border: none;
+            background-color: #027c53;
+            padding: 5px 10px;
+            border-radius: 8px;
+            color: antiquewhite;
+        }.login-btn:hover{
+            background-color: #28ea99;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown"><a href="#">About</a>
+                <div class="dropdown-content">
+                    <a href="#">Our Story</a>
+                    <a href="#">Follow Us</a>
+                    <a href="#">Join Us</a>
+                </div>
+                </li>
+                <li><a href="#">Products</a></li>
+                <button class="login-btn">Login</button>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
