@@ -27,3 +27,6 @@ let state;
 
 console.log(typeof(null)); // output => object
 console.log(typeof(undefined)); //output => undefined
+console.log(typeof name);
+console.log(typeof number)
+
