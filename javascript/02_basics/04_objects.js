@@ -54,3 +54,32 @@ console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));
 console.log(Object.hasOwnProperty('isLoggedIn'));
 
+
+//// destructure
+
+const course = {
+    courseNmae:"js in hindi",
+    price: "999",
+    courseInstructor:"hitesh"
+}
+//course.courseInstructor
+
+const {courseInstructor : instructor} = course
+
+//console.log(courseInstructor);
+console.log(instructor);
+
+
+// json structure
+
+// {
+//   "id": 101,
+//   "name": "Rahul Sharma",
+//   "age": 21,
+//   "isStudent": true,
+//   "skills": ["HTML", "CSS", "JavaScript"],
+//   "address": {
+//     "city": "Delhi",
+//     "state": "Delhi",
+//     "country": "India"
+//   }
