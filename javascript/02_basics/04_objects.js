@@ -52,7 +52,7 @@ console.log(users[1].email);
 console.log(Object.keys(tinderUser));
 console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));
-console.log(Object.hasOwnProperty('isLoggedIn'));
+console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
 
 //// destructure
@@ -69,6 +69,11 @@ const {courseInstructor : instructor} = course
 //console.log(courseInstructor);
 console.log(instructor);
 
+const {courseName, price} = course
+console.log(price);
+
+const {duration = "2 hours"} = course
+console.log(duration)
 
 // json structure
 

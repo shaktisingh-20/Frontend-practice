@@ -30,7 +30,7 @@ jsUser.greeting = function(){
     console.log("hello how are you");
 }
 console.log(jsUser);
-console.log(jsUser.greeting());
+console.log(jsUser.greeting());                                          
 
 jsUser.greetingtwo = function(){
     console.log(`hello js user ${this.age} years old`);
