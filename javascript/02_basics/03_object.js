@@ -1,5 +1,5 @@
 // singleton
-
+// Object.create
 
 
 // object literal
