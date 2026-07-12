@@ -8,3 +8,50 @@ if(true){ // local scope
 console.log(a);
 // console.log(b); ReferenceError: b is not defined
 // console.log(c); // out put 50
+//
+
+
+function one(){
+    const userName = "Shakti"
+
+    function two(){
+        const website = "Youtube"
+        console.log(userName)
+    }
+    // console.log(website); //ReferenceError: website is not defined
+    
+    two()
+}
+one()
+//
+
+
+if(true){
+    const name = "Shakti"
+
+    if(name === "Shakti"){
+        const channel = "chaiOrCode"
+        console.log(name);
+    }
+    // console.log(channel) not defined
+}
+
+// console.log(name); // not defined
+
+
+// +++++++++++++++++++++++++++
+// mini hoisting
+
+console.log(addOne(2));
+function addOne(num){
+    return num + 1
+}
+
+
+
+// console.log(addTwo(1)); will give error
+const addTwo = function(num){
+    return num + 2
+}
+console.log(addTwo(1));
+
