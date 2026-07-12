@@ -54,3 +54,20 @@ chai()
 
 const name = (num1, num2) => ({username:"Shakti"})
 console.log(name(2,4))
+///
+
+
+// exapmle why arrow function is preffered and used
+
+const user = {
+    name: "Shakti",
+    arrowGreet: function(){
+        console.log(this.name)   // "Shakti" - works
+        
+        const inner = () => {
+            console.log(this.name)   // "Shakti" - still works!
+        }
+        inner()
+    }
+}
+user.arrowGreet()
