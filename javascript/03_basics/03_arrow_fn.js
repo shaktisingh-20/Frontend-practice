@@ -59,15 +59,33 @@ console.log(name(2,4))
 
 // exapmle why arrow function is preffered and used
 
+
+
+
 const user = {
     name: "Shakti",
-    arrowGreet: function(){
-        console.log(this.name)   // "Shakti" - works
+    normalGreet: function(){
+        console.log(this.name)   // "Shakti" - works fine yahan
         
-        const inner = () => {
-            console.log(this.name)   // "Shakti" - still works!
+        function inner(){
+            console.log(this.name)   // undefined! 'this' badal gaya
         }
         inner()
     }
 }
-user.arrowGreet()
+user.normalGreet()
+
+
+
+// const user = {
+//     name: "Shakti",
+//     arrowGreet: function(){
+//         console.log(this.name)   // "Shakti" - works
+        
+//         const inner = () => {
+//             console.log(this.name)   // "Shakti" - still works!
+//         }
+//         inner()
+//     }
+// }
+// user.arrowGreet()
