@@ -38,5 +38,19 @@ const chai = () => {
     console.log(this.userName); // => {}
     
 }
-
 chai()
+
+// simple arrow function
+// const addTwo = (num1,num2) => {
+//     return num1 + num2
+// }
+// console.log(addTwo(23,1));
+
+// Implicit Return
+// const addTwo = (num1 , num2) => num1 + num2
+// console.log(addTwo(23,1))
+
+// const addTwo = (num1 , num2) => (num1 + num2) // same as above just added brackets
+
+const name = (num1, num2) => ({username:"Shakti"})
+console.log(name(2,4))
