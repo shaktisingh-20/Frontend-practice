@@ -54,11 +54,11 @@ function handleObject(anyObject){
     return `This is ${anyObject.name} and he is ${anyObject.age} years old`
 }
 
-// console.log(handleObject(user))
-console.log(handleObject({
-    name:"Shakti",
-    age:22
-}))
+console.log(handleObject(user))
+// console.log(handleObject({
+//     name:"Shakti",
+//     age:22
+// }))
 
 const myNewArray = [100,200,300,400,500]
 
