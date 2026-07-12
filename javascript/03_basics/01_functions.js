@@ -67,3 +67,15 @@ function returnSecondElement(arr){
 }
 console.log(returnSecondElement(myNewArray))
 console.log(returnSecondElement([200,300,400,500,600]))
+
+
+console.log(b)
+var b = 5
+
+var a = 100
+function change(){
+    var a = 200
+    console.log(a)
+}
+change()
+console.log(a) 
